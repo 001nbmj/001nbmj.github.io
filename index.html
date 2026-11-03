@@ -1,0 +1,8 @@
+---
+layout: default
+---
+<section class="hero"><h1>Tbot</h1>
+<p>我做 AI 影像，也在搭 Grok Bot 多代理工作流。另一件常做的事：把设计和文字里的 AI 味去掉。</p>
+<p>这里放每日精选和偶尔的长文。更多日常在 <a href="https://x.com/Thad_Tereda">X @Thad_Tereda</a>。</p></section>
+<h2>最新精选</h2><ul class="list">{% assign ds = site.digests | sort: 'date' | reverse %}{% for d in ds limit:5 %}
+<li><a href="{{ d.url | relative_url }}">{{ d.title }}</a><div class="meta">{{ d.date | date: '%Y-%m-%d' }} · {{ d.excerpt }}</div></li>{% endfor %}</ul>

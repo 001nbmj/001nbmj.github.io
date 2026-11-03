@@ -1,0 +1,7 @@
+---
+layout: default
+title: 每日精选
+---
+<h1>每日精选</h1><p class="mute">从我的 X 收藏和点赞里挑出来的东西，每条都附原帖。</p>
+<ul class="list">{% assign ds = site.digests | sort: 'date' | reverse %}{% for d in ds %}
+<li><a href="{{ d.url | relative_url }}">{{ d.title }}</a><div class="meta">{{ d.date | date: '%Y-%m-%d' }} · {{ d.excerpt }}</div></li>{% endfor %}</ul>

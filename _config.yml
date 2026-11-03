@@ -1,0 +1,15 @@
+title: 'Tbot'
+description: 'AI 影像创作、Grok Bot 多代理、去 AI 味的设计与写作'
+url: 'https://001nbmj.github.io'
+baseurl: ''
+lang: zh-CN
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+collections:
+  digests:
+    output: true
+    permalink: /digests/:slug/
+feed:
+  collections:
+    - digests
