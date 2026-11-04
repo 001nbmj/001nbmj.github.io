@@ -13,3 +13,6 @@ collections:
 feed:
   collections:
     - digests
+
+# GoatCounter site code (e.g. "tbot"). Empty = analytics off.
+goatcounter_code: ""
